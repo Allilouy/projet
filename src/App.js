@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Image from './imageInSrc.jpg'
 import MediaCard from './card'
+var FontAwesome = require('react-fontawesome');
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div class="container">
   <div class="card">
   <MediaCard />
+  
   </div>
 </div>
       
