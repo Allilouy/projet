@@ -7,13 +7,17 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Image from './imageInSrc.jpg'
+var FontAwesome = require('react-fontawesome');
+
+
 
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
   },
   media: {
-    height: 140,
+    height: 50,
   },
 });
 
@@ -25,9 +29,15 @@ export default function MediaCard() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          
           title="Contemplative Reptile"
-        />
+        />      <FontAwesome
+        className='super-crazy-colors'
+        name='rocket'
+        size='2x'
+        spin
+        style={{ textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+      />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Lizard
